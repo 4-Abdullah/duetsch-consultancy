@@ -1,7 +1,7 @@
 
 function Button({type, onClick}) {
   return (
-    <div>Button</div>
+      <button onClick={onClick} className={`${type==="primary" ? "bg-black" :" bg-gray"}`} >{title}</button>
   )
 }
 
