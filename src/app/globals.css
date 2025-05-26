@@ -19,6 +19,22 @@
   }
 }
 
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: inherit;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
