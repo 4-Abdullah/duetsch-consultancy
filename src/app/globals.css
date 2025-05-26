@@ -20,8 +20,8 @@
 }
 
 * {
-    box-sizing: border-box;
-    -webkit-font-smoothing: inherit;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
 }
 
 @keyframes slideDown {
