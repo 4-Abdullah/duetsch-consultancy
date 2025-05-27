@@ -4,13 +4,9 @@ import Image from "next/image";
 import Instagram from "./socialIcons/InstagramIcon";
 import LinkedInIcon from "./socialIcons/LinkedInIcon";
 
-// Note: remove inline style with twailwind classes
 function Footer() {
   return (
-    <footer
-      style={{ color: "#8C87AA", fontFamily: "var(--font-poppins)" }}
-      className="relative w-full  shadow-md pl-40 pr-40 pt-0 pb-2.5"
-    >
+    <footer className="mt-auto w-full text-[#8C87AA] font-[family-name:var(--font-poppins)] shadow-md pl-40 pr-40 pt-0 pb-2.5">
       <div className="relative  items-center flex w-full rounded-2xl text-left overflow-hidden">
         <div>
           <Image

@@ -1,15 +1,12 @@
 "use client";
 import Link from "next/link";
-import Button from "./Button.js";
-import { useRouter } from "next/navigation.js";
 import Image from "next/image";
-import Underline from "./Underline.js";
 
-// Note : update it with cosmetice changes
-// replace anchor tag with Link from next/Link
-// why you should not make a seperate array of routing and map it in nav bar
+// Component Block
+import Button from "./Button.js";
+import Underline from "./Underline.js";
+import { primarybtnOnClickevent } from "./OnClickEvents.js";
 function Navbar() {
-  const router = useRouter();
   const routes = [
     { path: "/", text: "Home" },
     { path: "/about", text: "About" },
@@ -19,12 +16,8 @@ function Navbar() {
     { path: "/contact", text: "Contact" },
   ];
 
-  function primarybtnOnClickevent() {
-    router.push("/pricing"); // Navigate to another page
-  }
-
   return (
-    <nav className="fixed top-0 w-full  shadow-md animate-[slideDown_0.5s_ease-in-out] pl-40 pr-40 pt-2.5 pb-0">
+    <nav className="fixed top-0 w-full bg-[#0C0512] z-50 shadow-md animate-[slideDown_0.5s_ease-in-out] pl-40 pr-40 pt-2.5 pb-0">
       <div className=" flex justify-between items-center">
         <Link href="/">
           <Image
