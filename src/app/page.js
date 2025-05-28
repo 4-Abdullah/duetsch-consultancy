@@ -3,6 +3,7 @@ import Card from "./components/Card";
 import Facilities from "./components/Facilities";
 import FeaturesSection from "./components/FeaturesSection";
 import Header from "./components/Header";
+import Integration from "./components/Integration";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <AboutFounder/>
       <FeaturesSection/>
       <Facilities/>
-      
+      <Integration/>
     </div>
   );
 }

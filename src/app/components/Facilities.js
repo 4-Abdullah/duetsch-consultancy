@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Card from "./Card";
-import ProfessionalsfromTopCompanies from "./ProfessionalsfromTopCompanies";
+import TopCompaniesLogos from "./TopCompaniesLogos";
 
 export default function Facilities() {
   return (
@@ -82,10 +82,9 @@ export default function Facilities() {
   <h2 className="text-[37px] font-medium tracking-[-2.1px] text-center text-white font-poppins">
     Professionals from Top Companies
   </h2>
-  
+
 </div>
-<br/>
-  <ProfessionalsfromTopCompanies/>
+  <TopCompaniesLogos/>
 </div>
 
   );
