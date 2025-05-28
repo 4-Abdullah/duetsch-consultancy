@@ -10,6 +10,7 @@ const Card = ({
   title,
   description,
   animateOnScroll = true,
+  imagetype
 }) => {
   const [inView, setInView] = useState(false);
   const cardRef = useRef(null);
@@ -42,24 +43,34 @@ const Card = ({
     : "opacity-100 translate-y-0";
 
   return (
+ <div
+  ref={cardRef}
+  className={`
+    relative mx-auto flex flex-col gap-0 w-[100%] max-w-xl  
+    border border-t-0 border-b-violet-500 border-x-[#C47BF7] 
+    sm:max-w-sm md:max-w-[100%] rounded-2xl 
+    shadow-lg transition-all duration-500 transform 
+    ${animationClasses}
+  `}
+>
+  {/* Wrapper for the image container using an aspect ratio */}
+  <div className="relative w-full overflow-hidden rounded-t-2xl">
+    {/* The aspect-[16/9] sets the height according to the width so the container tightly fits the image aspect */}
     <div
-      ref={cardRef}
-      className={`${cardWidth} relative w-dvw min-h-[50vh] max-h-[70vh] max-w-xl border border-t-0 border-b-violet-500 border-x-[#C47BF7] 
-    sm:max-w-sm md:max-w-dvw rounded-2xl bg-contain bg-no-repeat items-center shadow-lg transition-all duration-500 transform ${animationClasses}`}
-    >
-      <div
-        className="relative w-full min-h-[490px] max-w-xl 
-        sm:max-w-sm md:max-w-dvw sm:h-64 md:h-80 lg:h-96 rounded-2xl 
-        bg-contain bg-no-repeat items-center"
-        style={{ backgroundImage: `url(${image})` }}
-      ></div>
-      <div
-        className={`absolute bottom-0 mx-auto md:w-full rounded-b-2xl p-8 bg-[#0D0713] `}
-      >
-        <h2 className="text-2xl  text-white">{title}</h2>
-        <p className="mt-2 ">{description}</p>
-      </div>
-    </div>
+      className="aspect-[16/9] bg-center bg-no-repeat bg-cover"
+      style={{ backgroundImage: `url(${image})` }}
+    ></div>
+  </div>
+  
+  {/* Bottom Content – follows immediately under the image container */}
+  <div className="w-full rounded-b-2xl p-8 bg-[#0D0713]">
+    <h2 className="text-2xl text-white">{title}</h2>
+    <p className="mt-2">{description}</p>
+  </div>
+</div>
+
+
+
   );
 };
 

@@ -3,7 +3,7 @@ import Card from "./Card";
 
 export default function FeaturesSection() {
   return (
-    <div className="w-[1280px] mx-auto relative flex flex-col items-center justify-center px-4 py-8 bg-black">
+    <div className="pt-60 w-[1280px] mx-auto relative flex flex-col items-center justify-center px-4 py-8 ">
       <div className="flex flex-col justify-center text-center shrink-0 transform-none outline-none">
         <h3 className="text-white w-2xl text-center  text-[52px] leading-[54px] tracking-[-0.06em]">
           Built for Founders, Freelancers, and Professionals

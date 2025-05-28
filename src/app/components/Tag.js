@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Tag() {
   return (
-    <Link href="/" className="inline-block opacity-100 transform-none ">
-      <div className="flex flex-row border p-1 border-gray-600 bg-[#271F35] rounded-4xl">
-        <div className="flex flex-col h-6 bg-[#4F60FA]  rounded-[7px] p-1 justify-start flex-shrink-0 outline-none">
-          <p className="text-[12px] font-medium leading-[19px] text-white">
+    <Link href="/" className=" opacity-100 flex justify-center transform-none ">
+      <div className="flex flex-row border p-1 h-8 border-gray-600 bg-[#271F35] rounded-4xl">
+        <div className="flex flex-col  justify-start flex-shrink-0 outline-none">
+          <p className="text-[12px] p-1 h-6 bg-[#4F60FA]   rounded-4xl font-medium leading-[19px] text-white">
             New
           </p>
         </div>
