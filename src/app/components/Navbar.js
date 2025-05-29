@@ -6,6 +6,7 @@ import Image from "next/image";
 import Button from "./Button.js";
 import Underline from "./Underline.js";
 import { primarybtnOnClickevent } from "./OnClickEvents.js";
+
 function Navbar() {
   const routes = [
     { path: "/", text: "Home" },
@@ -17,20 +18,25 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-[#0C0512] z-50 shadow-md animate-[slideDown_0.5s_ease-in-out] pl-40 pr-40 pt-2.5 pb-0">
-      <div className=" flex justify-between items-center">
+    <nav className="fixed top-0 w-full bg-[#0C0512] z-50 shadow-md animate-[slideDown_0.5s_ease-in-out] lg:px-10 xl:px-40 pl-2 pr-2 pt-2.5 pb-0">
+      <div className="flex flex-col sm:flex-col lg:flex-row lg:pr-0 justify-between items-center
+      w-full xl:px-0 2xl:px-10
+      ">
         <Link href="/">
           <Image
-            className="object-contain rounded-md min-w-[100px] max-w-[150px] max-h-[100px] min-h-[50px]"
+            className="object-contain rounded-md w-auto max-w-[150px] h-auto max-h-[100px]"
             src="/Logo.png"
-            width={"150"}
-            height={"100"}
-            alt="image"
+            width={150}
+            height={100}
+            alt="Logo"
           />
         </Link>
-        <div
+<div className="flex flex-col md:flex-row  xl:pr-0
+  justify-between items-center  sm:flex-col 
+">
+ <div
           style={{ color: "#8C87AA", fontFamily: "var(--font-poppins)" }}
-          className="flex space-x-6 bg-[rgba(12,5,18,0.9)] rounded-full backdrop-blur-md gap-2 pl-12 pr-12 pt-4 pb-0 "
+          className="flex space-x-6 bg-[rgba(12,5,18,0.9)] rounded-full backdrop-blur-md gap-2 flex-col  sm:flex-col sm:pb-3 md:flex-row  md:pr-10  lg:pl-14 xl:pr-20 pt-4 pb-0"
         >
           {routes.map((route, index) => {
             return (
@@ -42,19 +48,23 @@ function Navbar() {
                   <h2 className=" transition-colors duration-300">
                     {route.text}
                   </h2>
-                  <Underline />
-                </div>
-              </Link>
-            );
-          })}
+                <Underline />
+              </div>
+            </Link>
+        )          
+        })}
         </div>
 
+        {/* Call to Action Button */}
+        <div className="xl:pl-20 md:pl-5 lg:pl-20">
         <Button
           type="primary"
           onClick={primarybtnOnClickevent}
           title="Explore Membership"
           font="var(--font-poppins)"
         />
+        </div>
+      </div>
       </div>
     </nav>
   );
