@@ -3,7 +3,7 @@ import Card from "./Card";
 
 export default function FeaturesSection() {
   return (
-    <div className="pt-60 w-[1280px] mx-auto relative flex flex-col items-center justify-center px-4 py-8 ">
+    <div className="pt-60 w-full  relative flex flex-col items-center justify-center px-4 py-8 ">
       <div className="flex flex-col justify-center text-center shrink-0 transform-none outline-none">
         <h3 className="text-white w-2xl text-center  text-[52px] leading-[54px] tracking-[-0.06em]">
           Built for Founders, Freelancers, and Professionals
@@ -15,8 +15,8 @@ export default function FeaturesSection() {
         </h2>
       </div>
 
-      <div className="w-full mx-auto pt-15">
-        <div className="flex flex-row w-full gap-5 ">
+      <div className="w-full  mx-auto pt-15">
+        <div className="grid grid-cols-3 lg:w-full card-container card-container-small   md:card-container md:w-full  xl:flex-nowrap xl:w-full w-10/12 gap-5 ">
           <Card
             image="/YoungProfessionals.png"
             title="Young Professionals"
@@ -34,7 +34,7 @@ export default function FeaturesSection() {
           />
         </div>
         <br />
-        <div className="flex flex-row  gap-12 ">
+        <div className="flex flex-row card-container-small  gap-12 ">
           <Card
             image="/OverseasPakistani.png"
             title="Overseas Pakistani"
