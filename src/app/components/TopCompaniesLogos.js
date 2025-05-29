@@ -41,8 +41,8 @@ export default function TopCompaniesLogos() {
     p-[10px]
     list-none
     opacity-100 overflow-hidden
-    
-    items-center justify-center "
+    relative
+    items-center justify-center"
         style={{
           maskImage:
             "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)",
@@ -50,22 +50,8 @@ export default function TopCompaniesLogos() {
             "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)", // Required for Safari support
         }}
       >
-        <ul
-          className="flex flex-row
-
-    w-full h-full
-    max-w-full
-    max-h-full
-    place-items-center
-    m-0
-    p-0
-    list-none
-    gap-[32px]
-    relative
-    
-    "
-        >
-          {TopCompanies.map((logo, index) => (
+        <ul className="flex animate-[logoLoop_60s_linear_infinite] gap-16 min-w-[200%]">
+          {[...TopCompanies, ...TopCompanies].map((logo, index) => (
             <li key={index}>
               <div className="w-[150px] h-[48px]">
                 <Image

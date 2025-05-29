@@ -35,6 +35,32 @@
   }
 }
 
+
+/* Custom screen sizes */
+@media (max-width: 1198px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+    gap: 16px;
+  }
+}
+@media (max-width: 808px) {
+  .card-container-small {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Switch to 2 columns */
+    gap: 16px;
+  }
+}
+
+
+
+/* Logos Carousel animation */
+@keyframes logoLoop {
+  from { transform: translateX(0%); }  /* Start from right */
+  to { transform: translateX(-50%); }   /* Move to left */
+}
+
+
 body {
   background: var(--background);
   color: var(--foreground);
