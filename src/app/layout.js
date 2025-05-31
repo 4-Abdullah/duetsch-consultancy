@@ -25,7 +25,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Osama Furkan Khan",
+  title: "Kamyabi Network",
   description: "Duetsch Consultancy",
 };
 

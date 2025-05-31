@@ -1,11 +1,11 @@
-
+// Component Block
 import AboutFounder from "./components/AboutFounder";
 import Facilities from "./components/Facilities";
 import FeaturesSection from "./components/FeaturesSection";
 import Header from "./components/Header";
 import Integration from "./components/Integration";
 import { secondarybtnOnClickevent } from "./components/OnClickEvents";
-import Pricing from "./components/Pricing";
+import PricingSection from "./components/PricingSection";
 import UserSay from "./components/UserSay";
 
  const Home =async()=> {
@@ -17,7 +17,7 @@ import UserSay from "./components/UserSay";
 };
 
   return (
-    <div className="mt-15 text-[#8C87AA] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-poppins)]">
+    <div className="mt-15 text-[#8C87AA]  items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-poppins)]">
        
       <Header title={titleWords} subtitle={description} actionBtn={btnContent}/>
       <AboutFounder/>
@@ -25,7 +25,7 @@ import UserSay from "./components/UserSay";
       <Facilities/>
       <Integration/>
       <UserSay/>
-      <Pricing/>
+      <PricingSection/>
     </div>
   );
 }
