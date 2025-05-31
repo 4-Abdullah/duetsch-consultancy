@@ -11,14 +11,16 @@ function Button({ type, onClick, title, font }) {
         onClick={onClick}
         className={`${
           type === "primary"
-            ? "bg-[#0d0a17] rounded-[52px] cursor-pointer shadow-[inset_0px_-2px_6px_#e496ff,inset_0px_4px_6px_#0d0a17] w-full max-w-full h-full flex items-center justify-center text-white font-semibold"
+            ? `bg-[#0d0a17] rounded-[52px] cursor-pointer shadow-[inset_0px_-2px_6px_#e496ff,inset_0px_4px_6px_#0d0a17] w-full max-w-full h-full flex items-center justify-center
+              text-white font-semibold hover:border hover:border-[#0d0a17] hover:shadow-[inset_0px_0px_3px_#e496ff]`
             : `inline-block px-8 py-3 cursor-pointer text-white font-semibold rounded-full
-            bg-[radial-gradient(67%_140%_at_4.6%_40.8%,_rgb(250,147,250)_0%,_rgb(152,58,214)_100%)]
-            shadow-[inset_0px_-3px_3px_0px_rgb(228,150,255)]
+             shadow-inner shadow-pink-300 transition-all duration-300 relative 
+             overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-[#EE88F6] before:to-purple-600 
+             before:transition-transform before:duration-500 before:scale-x-100 hover:before:scale-x-0 hover: bg-gradient-to-l from-[#EE88F6] to-purple-600
              `
         }`}
       >
-        {title}
+       <span className="relative z-10">{title}</span>
       </button>
     </div>
   );

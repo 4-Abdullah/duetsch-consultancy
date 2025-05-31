@@ -1,11 +1,12 @@
 
 import AboutFounder from "./components/AboutFounder";
-import Card from "./components/Card";
 import Facilities from "./components/Facilities";
 import FeaturesSection from "./components/FeaturesSection";
 import Header from "./components/Header";
 import Integration from "./components/Integration";
 import { secondarybtnOnClickevent } from "./components/OnClickEvents";
+import Pricing from "./components/Pricing";
+import UserSay from "./components/UserSay";
 
  const Home =async()=> {
   const titleWords = ["Your", "Gateway", "to", "the", "15", "Trillion", "$*", "AI", "Economy"];
@@ -23,6 +24,8 @@ import { secondarybtnOnClickevent } from "./components/OnClickEvents";
       <FeaturesSection/>
       <Facilities/>
       <Integration/>
+      <UserSay/>
+      <Pricing/>
     </div>
   );
 }
