@@ -60,6 +60,24 @@
   to { transform: translateX(-50%); }   /* Move to left */
 }
 
+@keyframes card-colLoop-downward {
+ from { transform: translateY(-100%);}  /* Start above */
+  to { transform: translateY(0%);} /* Move down & exit */
+}
+
+@keyframes card-colLoop-upward {
+  from { transform: translateY(0%); }  /* Start from right */
+  to { transform: translateY(-100%); }   /* Move to left */
+}
+@keyframes card-LrowLoop {
+  from { transform: translateX(-100%); }  /* Start from right */
+  to { transform: translateX(0%); }   /* Move to left */
+}
+@keyframes card-RrowLoop {
+  from { transform: translateX(0%); }  /* Start from right */
+  to { transform: translateX(-100%); }   /* Move to left */
+}
+
 
 body {
   background: var(--background);
