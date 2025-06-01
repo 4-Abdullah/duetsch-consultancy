@@ -46,9 +46,9 @@ const Card = ({
  <div
   ref={cardRef}
   className={`
-    relative mx-auto flex flex-col gap-0 w-[100%] max-w-xl  
+    relative md:mx-auto flex flex-col  w-[100%] max-w-xl  
     border border-t-0 border-b-violet-500 border-x-[#C47BF7] 
-    sm:max-w-sm md:max-w-[100%] rounded-2xl 
+    sm:w-fit md:max-w-[100%] rounded-2xl 
     shadow-lg transition-all duration-500 transform 
     ${animationClasses}
   `}
@@ -64,8 +64,8 @@ const Card = ({
   
   {/* Bottom Content – follows immediately under the image container */}
   <div className="w-full rounded-b-2xl p-8 bg-[#0D0713]">
-    <h2 className="text-2xl text-white">{title}</h2>
-    <p className="pt-2">{description}</p>
+    <h2 className="text-lg sm:text-2xl text-white">{title}</h2>
+    <p className="pt-2 text-sm">{description}</p>
   </div>
 </div>
 

@@ -3,20 +3,20 @@ import Card from "./Card";
 
 export default function FeaturesSection() {
   return (
-    <div className="pt-60 w-full  relative flex flex-col items-center justify-center px-4 py-8 ">
-      <div className="flex flex-col justify-center text-center shrink-0 transform-none outline-none">
-        <h3 className="text-white w-2xl text-center  text-[52px] leading-[54px] tracking-[-0.06em]">
+    <div className="pt-60 w-full  relative flex flex-col items-center justify-center px-4 py-8 bg-[#0C0512]">
+      <div className="flex flex-col justify-center sm:w-xl md:w-2xl text-center shrink-0 transform-none outline-none">
+        <h3 className="text-white  text-center  text-[52px] leading-[54px] tracking-[-0.06em]">
           Built for Founders, Freelancers, and Professionals
         </h3>
         <br />
-        <h2>
+        <h2 >
           On a Mission to Power $30B in Exports by 2030 — Through AI and
           Pakistani Talent.
         </h2>
       </div>
 
       <div className="w-full  mx-auto pt-15">
-        <div className="grid grid-cols-3 lg:w-full card-container card-container-small   md:card-container md:w-full  xl:flex-nowrap xl:w-full w-10/12 gap-5 ">
+        <div className="grid grid-cols-1 lg:w-full card-container card-container-small    md:card-container md:w-full lg:grid-cols-3  xl:flex-nowrap xl:w-full  gap-5 ">
           <Card
             image="/YoungProfessionals.png"
             title="Young Professionals"

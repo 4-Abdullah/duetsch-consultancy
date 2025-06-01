@@ -9,8 +9,8 @@ export default function AboutFounder() {
  
   <div className="relative rounded-t-4xl w-full h-[45px]">
     
-    <div className="absolute inset-0 bg-violet-500  bg-center -z-10 rounded-t-4xl" />
-    {/* <div className="absolute inset-0 bg-violet-500 bg-center -z-10 rounded-t-4xl" /> */}
+    <div className="absolute inset-0 bg-violet-500  bg-center z-20 rounded-t-4xl" />
+    <div className="absolute inset-0 bg-violet-500 bg-center z-20 rounded-t-4xl" />
 
     {/* Content that sits above the violet background */}
     <div className="relative  z-10 bg-transparent"/>

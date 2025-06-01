@@ -7,14 +7,11 @@ function Header({ title, actionBtn, subtitle, secondarytitle }) {
   return (
     <div className="w-full ">
   {/* Background grid boxes*/}
-<div
-  className="absolute top-0 left-0 w-full h-9/12 -z-10
-  bg-[linear-gradient(to_bottom,#1A1420_1px,transparent_1px),
-  linear-gradient(to_right,#1A1420_1px,transparent_1px)] bg-[80px_70px]"/>
+<div className="absolute top-0 left-0 w-full h-9/12 z-0 header-grid"/>
 
 
   <div className="relative flex flex-col items-center justify-center px-4 py-8">
-    <div className="relative z-10"> 
+    <div className="relative z-20"> 
       <br />
       <div className="flex flex-col w-full sm:w-xl md:w-2xl lg:w-4xl  justify-center text-center">
         <Header_title_mapping title={title}/> 
