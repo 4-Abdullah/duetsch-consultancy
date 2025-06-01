@@ -1,8 +1,6 @@
 import React from "react";
-import Underline from "./Underline";
-import { secondarybtnOnClickevent } from "./OnClickEvents";
 import Button from "./Button";
-
+import { btnContent } from "../data";
 export default function PricingCard({ title, subtitle, price }) {
   const PricingcardData_1 = [
     "15+ Hours Content",
@@ -94,7 +92,8 @@ export default function PricingCard({ title, subtitle, price }) {
           {/* Button Section */}
           <div className="justify-center">
             <Button
-              onClick={secondarybtnOnClickevent}
+              type="secondary"
+              url={btnContent.url}
               title="Request Early Access"
             />
           </div>

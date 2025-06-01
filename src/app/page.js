@@ -5,7 +5,6 @@ import FAQS from "./components/FAQS";
 import FeaturesSection from "./components/FeaturesSection";
 import Header from "./components/Header";
 import Integration from "./components/Integration";
-import { secondarybtnOnClickevent } from "./components/OnClickEvents";
 import PricingSection from "./components/PricingSection";
 import UserSay from "./components/UserSay";
 import { titleWords,description,btnContent,FAQS_Data,FAQS_heading } from "./data";
