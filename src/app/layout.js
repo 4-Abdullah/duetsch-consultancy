@@ -1,10 +1,11 @@
 // Components Block
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+// Next-js Dynamic import
+import dynamic from "next/dynamic";
+const Navbar = dynamic(() => import("./components/Navbar"));
+const Footer = dynamic(() => import("./components/Footer"));
 
 // Style Block
 import "./globals.css";
-
 // Other fonts & Common Components Block
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 

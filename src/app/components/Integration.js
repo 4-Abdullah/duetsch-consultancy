@@ -1,6 +1,8 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
+
+// Component Block
+import Button from "./Button";
 
 export default function Integration() {
   const IntegrationPics = [
@@ -53,7 +55,7 @@ export default function Integration() {
       className=" pt-40
     h-auto
     relative
-    w-full"
+    w-full bg-[#0C0512]"
     >
       <section className="w-full  opacity-100">
         <div
@@ -109,15 +111,7 @@ export default function Integration() {
 
               <br />
               <br />
-
-              <Link
-                href="./events"
-                className="inline-block w-40 px-8 py-3 cursor-pointer text-white font-semibold rounded-full
-            bg-[radial-gradient(67%_140%_at_4.6%_40.8%,_rgb(250,147,250)_0%,_rgb(152,58,214)_100%)]
-            shadow-[inset_0px_-3px_3px_0px_rgb(228,150,255)]"
-              >
-                Learn More
-              </Link>
+              <Button type="secondary" url="./events" title="Learn More" />
             </div>
             <div className="w-xl items-center justify-center">
               <div className="relative opacity-100 w-full h-auto flex flex-col items-center justify-center">

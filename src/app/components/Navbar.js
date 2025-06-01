@@ -1,11 +1,9 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
 
 // Component Block
 import Button from "./Button.js";
 import Underline from "./Underline.js";
-import { primarybtnOnClickevent } from "./OnClickEvents.js";
 
 function Navbar() {
   const routes = [
@@ -59,9 +57,8 @@ function Navbar() {
         <div className="xl:pl-20 md:pl-5 lg:pl-20">
         <Button
           type="primary"
-          onClick={primarybtnOnClickevent}
+          url="/pricing"
           title="Explore Membership"
-          font="var(--font-poppins)"
         />
         </div>
       </div>

@@ -1,56 +1,23 @@
-"use client";
-import { useEffect,useRef } from "react";
-
 // Component Block
 import Button from "./Button";
-import { secondarybtnOnClickevent } from "./OnClickEvents";
-import Tag from "./Tag";
-// Note: Update full component & update it with server component
+import Header_title_mapping from "./Header_title_mapping";
+
 function Header({ title, actionBtn, subtitle, secondarytitle }) {
-
-
-  useEffect(() => {
-    const words = document.querySelectorAll("h1 span");
-    words.forEach((word, index) => {
-      setTimeout(() => {
-        word.classList.remove("opacity-0", "blur-md");
-      }, index * 100);
-    });
-  }, []);
-
 
   return (
     <div className="w-full ">
-  {/* Background */}
+  {/* Background grid boxes*/}
 <div
-  className="absolute top-0 left-0 w-full h-9/12 -z-10"
-  style={{
-    backgroundImage: `
-      linear-gradient(to bottom, #1A1420 1px, transparent 1px),
-      linear-gradient(to right, #1A1420 1px, transparent 1px)
-    `,
-    backgroundSize: "80px 70px",
-  
-  }}
-></div>
+  className="absolute top-0 left-0 w-full h-9/12 -z-10
+  bg-[linear-gradient(to_bottom,#1A1420_1px,transparent_1px),
+  linear-gradient(to_right,#1A1420_1px,transparent_1px)] bg-[80px_70px]"/>
 
 
-  {/* Main Content */}
   <div className="relative flex flex-col items-center justify-center px-4 py-8">
-    {/* Header Section */}
     <div className="relative z-10"> 
-      {/* <Tag /> */}
       <br />
       <div className="flex flex-col w-full sm:w-xl md:w-2xl lg:w-4xl  justify-center text-center">
-        <h1 className="text-4xl justify-center text-center md:text-[60px] lg:text-[72px] sm:text-[60px] font-semibold leading-[50px] sm:leading-[94px] sm:tracking-[-0.04em] text-white">
-          {title.map((word, index) => (
-            <span key={index}>
-            <span  className="inline-block opacity-0 blur-md transition-all duration-700">
-              {word}
-            </span>{" "}</span>
-          ))}
-        </h1>
-       
+        <Header_title_mapping title={title}/> 
       </div>
 {subtitle?
       <div className="mt-4 ">
@@ -74,9 +41,8 @@ function Header({ title, actionBtn, subtitle, secondarytitle }) {
       <div className="mt-8 flex justify-center">
         <Button
           type="secondary"
-          onClick={secondarybtnOnClickevent}
+          url={actionBtn.url}
           title={actionBtn.title}
-          font="var(--font-poppins)"
         />
       </div>
       : <br/>

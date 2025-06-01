@@ -65,7 +65,7 @@ const Card = ({
   {/* Bottom Content – follows immediately under the image container */}
   <div className="w-full rounded-b-2xl p-8 bg-[#0D0713]">
     <h2 className="text-2xl text-white">{title}</h2>
-    <p className="mt-2">{description}</p>
+    <p className="pt-2">{description}</p>
   </div>
 </div>
 

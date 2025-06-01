@@ -44,7 +44,7 @@ export default function PricingSection() {
           setSubscriptionType={setSubscriptionType}
         />
         <div className="flex h-30" />
-        <div className="grid grid-cols-3 justify-center mx-auto w-full sm:w-full  lg:w-full card-container card-container-small md:w-full  xl:flex-nowrap xl:w-full  gap-5 xl:gap-12 ">
+        <div className="grid grid-cols-3 xl:h-[1000px] justify-center mx-auto w-full sm:w-full  lg:w-full card-container card-container-small md:w-full  xl:flex-nowrap xl:w-full  gap-5 xl:gap-12 ">
           <div className=" xl:w-96">
             <PricingCard
               title={pricingCard_1.title}

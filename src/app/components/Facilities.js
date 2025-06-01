@@ -1,12 +1,9 @@
-"use client"
 import React from "react";
-import Link from "next/link";
-import { useEffect,useState } from "react";
 
 // Component Block
 import Card from "./Card";
 import TopCompaniesLogos from "./TopCompaniesLogos";
-import { secondarybtnOnClickevent } from "./OnClickEvents";
+import { btnContent } from "../data";
 import Button from "./Button";
 
 export default function Facilities() {
@@ -18,29 +15,29 @@ export default function Facilities() {
     id="facilities"
     className="w-full"
   >
-    <div className="flex flex-col md:flex-col lg:flex-row justify-center items-center gap-40">
+    <div className="flex flex-col md:flex-col gap-y-10 lg:flex-row justify-center items-center lg:gap-40">
       {/* Left Section: Text Content */}
-      <div id="leftContent" className={`w-full md:w-6/12 flex flex-col lg:sticky lg:top-0  lg:h-[250vh] `}>
-        <div className="lg:sticky lg:top-36">
-        <div className="text-left ">
-          <h3 className="text-3xl  sm:text-4xl md:text-4xl lg:5xl text-white font-medium leading-tight">
+      <div id="leftContent" className={`w-full  flex flex-col lg:sticky lg:top-0 gap-y-10 lg:h-[250vh] `}>
+        <div className="flex flex-col lg:justify-start lg:items-start lg:text-left sm:text-center sm:justify-center sm:items-center  lg:sticky lg:top-36">
+        <div className="text-center lg:text-left">
+          <h3 className="text-3xl sm:text-4xl md:text-4xl lg:2xl text-white font-medium leading-tight">
             What's Inside?
           </h3>
-          <p className="mt-4 text-xs sm:text-sm lg:text-lg">
+          <p className="mt-4 text-sm sm:text-sm text-wrap lg:text-lg">
             We're gathering all the tools required to make you a global
             success in the rapidly growing AI Industry.
           </p>
         </div>
 
-        <div className="mt-6 ">
-          <Button onClick={secondarybtnOnClickevent} title="Request Early Access"/>
+        <div className="mt-6 flex justify-center">
+          <Button type="secondary" url={btnContent.url} title="Request Early Access"/>
         </div>
       </div>
 </div>
       
         
           {/* This inner container has a fixed height to control the scroll duration */}
-          <div  className="lg:relative w-2/3 space-y-4 lg:h-[250vh]">
+          <div  className="lg:relative w-full   sm:space-y-16 lg:h-[250vh]">
             {/* Card 1 */}
             <div className="lg:sticky lg:top-36 lg:z-10">
               <Card
@@ -73,6 +70,7 @@ export default function Facilities() {
     </div>
   </section>
 </div>
+<div className="h-60 lg:h-10"/>
 <div
   className="flex flex-col justify-start flex-shrink-0 outline-none"
 >
