@@ -3,7 +3,6 @@ import Button from "./Button";
 import Header_title_mapping from "./Header_title_mapping";
 
 function Header({ title, actionBtn, subtitle, secondarytitle }) {
-
   return (
     <div className="w-full ">
   {/* Background grid boxes*/}
@@ -25,30 +24,30 @@ function Header({ title, actionBtn, subtitle, secondarytitle }) {
       :<br/>
 }
 
-{secondarytitle?
-<div className="mt-4 flex flex-col w-full sm:w-xl md:w-2xl lg:w-4xl  ">
-        <h2 className=" sm:text-base md:text-xl lg:text-3xl text-center justify-center  text-white">
-          {secondarytitle}
-        </h2>
-      </div>
-      :<br/>
-}
+          {secondarytitle ? (
+            <div className="mt-4 flex flex-col w-full sm:w-xl md:w-2xl lg:w-4xl  ">
+              <h2 className=" sm:text-base md:text-xl lg:text-3xl text-center justify-center  text-white">
+                {secondarytitle}
+              </h2>
+            </div>
+          ) : (
+            <br />
+          )}
 
-{actionBtn?
-      <div className="mt-8 flex justify-center">
-        <Button
-          type="secondary"
-          url={actionBtn.url}
-          title={actionBtn.title}
-        />
+          {actionBtn ? (
+            <div className="mt-8 flex justify-center">
+              <Button
+                type="secondary"
+                url={actionBtn.url}
+                title={actionBtn.title}
+              />
+            </div>
+          ) : (
+            <br />
+          )}
+        </div>
       </div>
-      : <br/>
-}
     </div>
-  </div>
-</div>
-
-
   );
 }
 
