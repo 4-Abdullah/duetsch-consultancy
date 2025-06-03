@@ -43,3 +43,61 @@ export const FAQS_Data = [
           answer: `The current price listed includes our early bird discount applicable for the first 100 signups. After that we'll be increasing the price. Join now to lock in the early bird lifetime discount! `,
         },
       ];
+      
+export const Step_cardData = [
+    { stepperName:"AI Toolkit",
+      title:       "Master AI Tools. Build Anything.",
+      description: `Learn how to use powerful AI tools like Python, OpenAI APIs, Stable Diffusion,
+                    GitHub, and Hugging Face to build real-world AI projects.`,
+      image: "/AI_Toolkit.png",
+    },
+    { stepperName:"Code Foundations",
+      title:       "Start Coding. Build Your Future.",
+      description: `Learn the core programming fundamentals every software developer needs — from logic
+                    and syntax to problem-solving and structure.`,
+      image: "/Code_Foundations.png",
+    },
+    { stepperName:"Full Stack",
+      title:       "Build Web, Mobile, Full Stack Apps.",
+      description: `Learn to build full-stack applications using tools like React, Flutter, Node.js, and Firebase — with AI tools
+                    to supercharge your workflow. From sleek mobile apps to scalable web platforms, this track helps you ship real
+                    products, fast..`,
+      image: "/Full_Stack.png",
+    },
+    { stepperName:"Smart Systems",
+      title:       "Build Smart AI Agents & RAG",
+      description: `Receive actionable, AI-driven insights tailored to improve project outcomes and growth.`,
+      image: "/Smart_Systems.png",
+    }
+  ]
+  
+export const UserDataList_1 = [
+    {name:"Osama Furqan Khan",title:"PM - Mercedes Benz AG",image:"/Osama Furqan Khan.png",comment:`Watching Kamyabi Network’s phenomenal growth has been inspiring—it’s a powerhouse of ideas,
+     driven by an incredibly talented team under Muzamil’s leadership.`},
+    
+    {name:"Omair",title:"Visual Experience Web 3.0",image:"/Omair.png",comment:`Kamyabi Network breaks things down in a way that makes learning easy and practical, making it one of the best communities to be part of.`},
+    
+    {name:"Muhammad Nabeel",title:"Founder Exitbase",image:"/Muhammad Nabeel.png",comment:`Kamyabi Network has introduced me to some of the smartest and most helpful people in my industry. It constantly pushes you forward.`},
+    
+    {name:"Umair Bin Tahir",title:"Serial Entreprenuer",image:"/Umair Bin Tahir.png",comment:`Our youth have the power to transform Pakistan, but many feel lost without guidance, Kamyabi Network is that bridge, helping them build successful careers and a stronger future.`},
+     ]
+
+export const UserDataList_2 = [
+    {name:"Muhammad Usman",title:"Tech Lead Meta",image:"/Muhammad Usman.png",comment:`Kamyabi Network isn’t just a platform, it’s a dynamic community where professionals share ideas, gain insights, and grow together.`},
+    
+    {name:"Ahmad Nawaz",title:"Founder Khapay",image:"/Ahmad Nawaz.png",comment:`Kamyabi Network gave me the right direction, connecting me with people who challenge my thinking and help me make better decisions.`},
+    
+    {name:"Arsham Khalid",title:"Ex-PwC, L'Oréal",image:"/Arsham Khalid.png",comment:`Kamyabi Network makes tech accessible for Pakistani youth by featuring experts who break down complex topics into real world insights perfect for anyone looking to grow in tech, data, or AI.`},
+    
+    {name:"Asad Iqbal",title:"Co-Founder Noodle Seed",image:"/Asad Iqbal.png",comment:`Kamyabi Network is an amazing space to connect with like minded tech and AI professionals, huge credit to Muzamil and his team for fostering this valuable community.`},
+     ]
+
+export const UserDataList_3 = [
+    {name:"Mohib Mirza",title:"Founder AI Team Force",image:"/Mohib Mirza.png",comment:`Meeting brilliant minds through Kamyabi Network has been a game changer, there’s a real sense of collaboration that pushes you to do better.`},
+    
+    {name:"Asim Nadeem",title:"AI Engineer TalentAdore",image:"/Asim Nadeem.png",comment:`Kamyabi Network helps you move from ideas to execution, everyone here is focused on learning, growing, and building something meaningful.`},
+    
+    {name:"Ahmad Khan Niazi",title:"Product Manager PosterMyWall",image:"/Ahmad Khan Niazi.png",comment:`It’s rare to find a space where discussions actually challenge you, Kamyabi Network brings together people who make you think bigger.`},
+    
+    {name:"Zeeshan Ahmad",title:"Co-Founder QNC Trucklines",image:"/Zeeshan Ahmad.png",comment:`Before Kamyabi Network, I had ideas but lacked clarity, this community helped me connect with the right people and turn my thoughts into action.`},
+     ]  
