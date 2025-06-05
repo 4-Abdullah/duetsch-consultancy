@@ -101,3 +101,72 @@ export const UserDataList_3 = [
     
     {name:"Zeeshan Ahmad",title:"Co-Founder QNC Trucklines",image:"/Zeeshan Ahmad.png",comment:`Before Kamyabi Network, I had ideas but lacked clarity, this community helped me connect with the right people and turn my thoughts into action.`},
      ]  
+
+export const FacilitiesHeadingData = {
+    heading:"What's Inside",
+    subheading:`We're gathering all the tools required to make you a global
+            success in the rapidly growing AI Industry.`
+  }
+export const FacilitiesCardData = [
+  {   
+      top:"top-36",
+      z:"z-10",
+      imagetype:"cover",
+      cardheight:"h-[700px]",
+      image:"/Become-a-generativeAIWizard.png",
+      title:"Become a Generative AI Wizard",
+      description:"From complete programming noobs to experienced developers. Our program is designed for all levels.",         
+  },
+  {   
+      top:"top-40",
+      z:"z-20",
+      imagetype:"",
+      cardheight:" ",
+      image:"/PersonalBranding&SoftSkills.png",
+      title:"Personal Branding &amp; Soft Skills",
+      description:"From CV to LinkedIn to Leadership — build a global‑ready personal brand with the skills top companies demand."
+  },
+  {   
+      top:"top-44",
+      z:"z-30",
+      imagetype:" ",
+      cardheight:" ",
+      image:"/ConnectwithBrightest.png",
+      title:"Connect with the Brightest",
+      description:"Join a global community of top professionals, founders, and tech leaders. Get insider insights through weekly live sessions that keep you ahead of where the industry is headed."
+  }
+ ]
+export const LogosViewType = {
+  type:"flex-row",
+  opacity:"opacity-100",
+    width :"w-[calc(250px*14)]",
+    logoWidth:"w-[150px]",
+    logoHeight:"h-full",
+    logoTotalheight:"h-[100px]"
+}
+export const Logos = [
+    {
+      image: "/Unilever.png",
+    },
+    {
+      image: "/pwc.png",
+    },
+    {
+      image: "/ORACLE.png",
+    },
+    {
+      image: "/Microsoft.png",
+    },
+    {
+      image: "/Meta.png",
+    },
+    {
+      image: "/Mercedes-Benz.png",
+    },
+    {
+      image: "/HarvardUniversity.png",
+    },
+    {
+      image: "/airbnb.png",
+    },
+  ]; 

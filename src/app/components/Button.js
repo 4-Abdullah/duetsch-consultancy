@@ -17,7 +17,7 @@ function Button({ type, url, title }) {
       className={`${
         type === "primary"
           ? "flex items-center justify-center w-[213px] h-[48px]"
-          : "flex items-center justify-center w-[313px] h-[48px]"
+          : "flex items-center justify-center w-auto h-[48px]"
       }`}
     >
       <button

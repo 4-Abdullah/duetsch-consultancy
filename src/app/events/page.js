@@ -1,8 +1,11 @@
+// Component block
+import CtaSection from "../components/CtaSection";
+import FacilitiesVeiwCards from "../components/FacilitiesVeiwCards";
 import Header from "../components/Header";
+import SomeRecentEvents from "../components/SomeRecentEvents";
 import TopCompaniesLogos from "../components/TopCompaniesLogos";
-
+import { titleWords, FacilitiesCardData, FacilitiesHeadingData } from "./data";
 function Events() {
-  const titleWords = ["10+", "Hours", "of", "Live", "Events", "Weekly!"]
 
 
   return (
@@ -10,6 +13,13 @@ function Events() {
       <Header title={titleWords}/>
       <br/>
       <TopCompaniesLogos/>
+      <SomeRecentEvents/>
+      <FacilitiesVeiwCards
+        heading={FacilitiesHeadingData.heading}
+        subheading={FacilitiesHeadingData.subheading}
+        FacilitiesCardData={FacilitiesCardData}
+      />
+      <CtaSection/>
     </div>
   );
 }
