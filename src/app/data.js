@@ -6,6 +6,14 @@ export  const btnContent = {
     body=Hi%20Kamyabi%20Team,%0A%0AI’m%20interested%20in%20joining%20the%20community
     .%20Please%20let%20me%20know%20how%20to%20get%20access.%0A%0AThanks,%0A[Your%20Name]`
 };
+export const Feature_FAQS_Style = {
+        bg: `bg-[radial-gradient(23.18%_162.55%_at_2.44%_15.49%,_rgb(36,28,54)_0%,_rgb(6,4,13)_100%)]
+    hover:bg-[radial-gradient(55.18%_455.55%_at_8.44%_6.49%,_rgb(36,28,54)_0%,_rgb(6,4,13)_100%)]`,
+        textsize:"text-[16px]",
+        textcolor:"text-[#8C87AA]",
+        padding:"p-4"
+    }
+
 export const FAQS_heading = {
   heading:"You'll have questions!",
   subheading:"Everything you need to know about the course and payments."
