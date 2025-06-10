@@ -1,5 +1,6 @@
 import React from "react";
 import FAQS_card from "./FAQS_card";
+import { Feature_FAQS_Style } from "../data";
 
 export default function FAQS({ heading, subheading, FAQS_Data }) {
   return (
@@ -17,6 +18,7 @@ export default function FAQS({ heading, subheading, FAQS_Data }) {
               index={index}
               question={data.question}
               answer={data.answer}
+              style={Feature_FAQS_Style}
             />
           </div>
         ))}

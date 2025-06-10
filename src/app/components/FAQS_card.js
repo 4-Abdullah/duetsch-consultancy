@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-export default function FAQS_card({ index, question, answer }) {
+export default function FAQS_card({ index, question, answer,style }) {
   const [toggleicon, setToggleicon] = useState(null);
   function toggleFAQ(index) {
     console.log(toggleicon);
@@ -11,12 +11,10 @@ export default function FAQS_card({ index, question, answer }) {
   return (
     <div
       onClick={() => toggleFAQ(index)}
-      className=" text-wrap cursor-pointer mx-auto  border-[#24163D]  
-    bg-[radial-gradient(23.18%_162.55%_at_2.44%_15.49%,_rgb(36,28,54)_0%,_rgb(6,4,13)_100%)]
-    hover:bg-[radial-gradient(55.18%_455.55%_at_8.44%_6.49%,_rgb(36,28,54)_0%,_rgb(6,4,13)_100%)]
-    rounded-2xl shadow-lg border"
+      className={`${style.bg} text-wrap cursor-pointer mx-auto  border-[#24163D]  
+    rounded-2xl shadow-lg border`}
     >
-      <div className="w-full  sm:w-full text-sm md:text-[16px] px-4 sm:gap-0 text-white p-4 rounded-lg">
+      <div className={`w-full  sm:w-full text-sm md:${style.textsize} px-4 sm:gap-0 text-white ${style.padding} rounded-lg`}>
         <div className="flex justify-between">
             <span className="flex-auto sm:w-full text-wrap break-words">{question}</span>
             <span
@@ -28,7 +26,7 @@ export default function FAQS_card({ index, question, answer }) {
             </span>
         </div>
         <div
-          className={`flex-col justify-start text-[#8C87AA] space-y-5 rounded-lg ${
+          className={`flex-col justify-start ${style.textcolor} space-y-5 rounded-lg ${
             toggleicon === index ? "block" : "hidden"
           }`}
         >

@@ -11,11 +11,11 @@ import Onscroll from "./Onscroll";
 function About() {
  
   return (
-     <div className="mt-15 text-[#8C87AA] items-center justify-items-center min-h-screen  lg:p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-poppins)]">
+     <div className="mt-15 text-[#8C87AA] items-center justify-items-center min-h-screen p-5 gap-16 font-[family-name:var(--font-poppins)]">
       <Onscroll>
                 <Header title={titleWords}/>
       </Onscroll>
-      <Onscroll>
+       <Onscroll>
                 <AboutCards/>
       </Onscroll>
       <Onscroll>
@@ -24,7 +24,7 @@ function About() {
       <Onscroll>
                 <AboutTeam/>
       </Onscroll>
-      <Onscroll>
+     <Onscroll>
                 <AboutStats_Section/>
       </Onscroll> 
       <Onscroll>

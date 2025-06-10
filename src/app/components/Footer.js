@@ -17,7 +17,7 @@ function Footer() {
             alt="image"
           />
           <div className="mt-4">
-            <p className="text-sm text-wrap w-86 ">
+            <p className="w-[280px] text-sm sm:w-86 ">
               Kamyabi Network is a launchpad for Pakistan’s future — teaching
               AI, building portfolios, and connecting talent to global
               opportunities.
