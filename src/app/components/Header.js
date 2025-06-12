@@ -4,7 +4,7 @@ import Header_title_mapping from "./Header_title_mapping";
 
 function Header({ title, actionBtn, subtitle, secondarytitle }) {
   return (
-    <div className="w-full ">
+    <div className="w-full space-y-30">
   {/* Background grid boxes*/}
 <div className="absolute top-0 left-0 w-full h-9/12 z-0 header-grid"/>
 
@@ -47,6 +47,7 @@ function Header({ title, actionBtn, subtitle, secondarytitle }) {
           )}
         </div>
       </div>
+      <div className="h-20"/>
     </div>
   );
 }

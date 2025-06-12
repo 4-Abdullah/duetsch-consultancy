@@ -1,8 +1,7 @@
-import React from "react";
-
 // Component Block
 import FacilitiesVeiwCards from "./FacilitiesVeiwCards";
 import TopCompaniesLogos from "./TopCompaniesLogos";
+// Data block
 import { FacilitiesCardData, FacilitiesHeadingData } from "../data";
 import { Logos,LogosViewType } from "../data";
 
@@ -15,7 +14,7 @@ export default function Facilities() {
               subheading={FacilitiesHeadingData.subheading} 
               FacilitiesCardData={FacilitiesCardData}
         />
-<div className="h-60 lg:h-10"/>
+<div className="h-10 lg:h-10"/>
 <div
   className="flex flex-col justify-start flex-shrink-0 outline-none"
 >

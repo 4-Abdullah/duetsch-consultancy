@@ -1,33 +1,10 @@
-import React from "react";
+// Component block
 import Button from "./Button";
-import { btnContent } from "../data";
+// Data block
+import { btnContent, PricingcardData_1, PricingcardData_2, PricingcardData_3  } from "../data";
+
 export default function PricingCard({ title, subtitle, price }) {
-  const PricingcardData_1 = [
-    "15+ Hours Content",
-    "Personalized Support",
-    "AI Community Access",
-    "Hackathons",
-    "Live AI Events",
-  ];
-  const PricingcardData_2 = [
-    "30+ Hours Content",
-    "Personalized Support",
-    "FULL Community Access",
-    "ALL Community Events",
-    "Mentorship Calls",
-    "Live Events",
-    "Exclusive Job Board",
-    "Build Space for Founders",
-  ];
-
-  const PricingcardData_3 = [
-    "15+ Hours Content",
-    "Personalized Support",
-    "PB Community Access",
-    "Hackathons",
-    "Live PB Events",
-  ];
-
+  
   const selectedCard =
     title === "Artificial Intelligence"
       ? PricingcardData_1
@@ -73,7 +50,7 @@ export default function PricingCard({ title, subtitle, price }) {
                 <path d="M18 6.7l-8.48 8.48-3.54-3.54a.9959.9959 0 0 0-1.41 0c-.39.39-.39 1.02 0 1.41l4.24 4.24c.39.39 1.02.39 1.41 0l9.18-9.18c.39-.39.39-1.03-.01-1.42-.37-.38-1-.38-1.39.01z"></path>
               </svg>
             </div>
-            <p className="text-lg">{feature}</p>
+            <p className="text-[16px] sm:text-lg">{feature}</p>
           </div>
         ))}
         <div className="flex h-0.5" />

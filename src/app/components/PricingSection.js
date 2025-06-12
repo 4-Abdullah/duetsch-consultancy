@@ -1,36 +1,19 @@
 "use client";
+// Package block
 import { useState } from "react";
-import React from "react";
-
 // Component Block
 import PricingCard from "./PricingCard";
 import SubscriptionToggle from "./SubsrciptionToggle";
+// Data block
+import { pricingCard_1, pricingCard_2, pricingCard_3 } from "../data";
 
 export default function PricingSection() {
-  const pricingCard_1 = {
-    title: "Artificial Intelligence",
-    subtitle: "Become an AI Wizard in 6 Months",
-    monthlyPrice: "4,999",
-    yearlyPrice: "47,999",
-  };
-  const pricingCard_2 = {
-    title: "Full Access",
-    subtitle: "Premium access across ALL spaces",
-    monthlyPrice: "9,999",
-    yearlyPrice: "95,999",
-  };
-  const pricingCard_3 = {
-    title: "Personal Branding",
-    subtitle: "Get ready to pitch yourself to global business",
-    monthlyPrice: "4,999",
-    yearlyPrice: "47,999",
-  };
   const [subscriptionType, setSubscriptionType] = useState("monthly");
 
   return (
-    <div className="flex flex-col items-center gap-10 bg-[#0C0512]">
+    <div className="flex flex-col items-center gap-10 pt-18 sm:pt-5 bg-[#0C0512]">
       <div className="flex flex-col items-center ">
-        <h3 className="text-[30px] sm:text-[40px] md:text-[52px] text-white font-medium tracking-tight text-center leading-[68px]">
+        <h3 className="text-[30px] sm:text-[40px] md:text-[52px] text-white font-medium tracking-tight text-center leading-[40px] sm:leading-[68px]">
           Price Starts As Low As <br /> PKR 3999* Per Month
         </h3>
         <h2 className="text-[14px] sm:text-[10px] md:text-[14px] xl:text-[17px]  text-center">
@@ -43,7 +26,7 @@ export default function PricingSection() {
           subscriptionType={subscriptionType}
           setSubscriptionType={setSubscriptionType}
         />
-        <div className="flex h-30" />
+        <div className="h-10 sm:h-30" />
         <div className="grid grid-cols-3 xl:h-[1000px] justify-center mx-auto w-full sm:w-full  lg:w-full card-container card-container-small md:w-full  xl:flex-nowrap xl:w-full  gap-5 xl:gap-12 ">
           <div className=" xl:w-96">
             <PricingCard

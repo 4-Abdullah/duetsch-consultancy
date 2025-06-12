@@ -1,11 +1,12 @@
-import React from 'react'
+// Data block
 import { btnContent } from "../data";
+// Component block
 import Card from "./Card";
 import Button from "./Button";
 export default function FacilitiesVeiwCards({heading, subheading, FacilitiesCardData}) {
 
   return (
-    <div id="cardsContainer" className="w-full pt-32">
+    <div id="cardsContainer" className="w-[90vw] pt-32">
   <section
     id="facilities"
     className="w-full"
