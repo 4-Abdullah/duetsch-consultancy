@@ -177,4 +177,91 @@ export const Logos = [
     {
       image: "/airbnb.png",
     },
-  ]; 
+  ];
+export const IntegrationPics = [
+    {
+      image: "/IntegrationPic_1.png",
+      width: 61,
+      height: 61,
+      x: "left-[35%]",
+      y: "top-[50%]",
+    },
+    {
+      image: "/IntegrationPic_2.png",
+      width: 71,
+      height: 71,
+      x: "left-[45%]",
+      y: "top-[75%]",
+    },
+    {
+      image: "/IntegrationPic_3.png",
+      width: 68,
+      height: 68,
+      x: "left-[10%]",
+      y: "top-[32%]",
+    },
+    {
+      image: "/IntegrationPic_4.png",
+      width: 75,
+      height: 75,
+      x: "left-[10%]",
+      y: "top-[68%]",
+    },
+    {
+      image: "/IntegrationPic_5.png",
+      width: 81,
+      height: 81,
+      x: "left-[70%]",
+      y: "top-[65%]",
+    },
+    {
+      image: "/IntegrationPic_6.png",
+      width: 122,
+      height: 122,
+      x: "left-[58%]",
+      y: "top-[35%]",
+    },
+  ];
+export const PricingcardData_1 = [
+    "15+ Hours Content",
+    "Personalized Support",
+    "AI Community Access",
+    "Hackathons",
+    "Live AI Events",
+  ];
+export const PricingcardData_2 = [
+    "30+ Hours Content",
+    "Personalized Support",
+    "FULL Community Access",
+    "ALL Community Events",
+    "Mentorship Calls",
+    "Live Events",
+    "Exclusive Job Board",
+    "Build Space for Founders",
+  ];
+
+export const PricingcardData_3 = [
+    "15+ Hours Content",
+    "Personalized Support",
+    "PB Community Access",
+    "Hackathons",
+    "Live PB Events",
+  ];
+export const pricingCard_1 = {
+    title: "Artificial Intelligence",
+    subtitle: "Become an AI Wizard in 6 Months",
+    monthlyPrice: "4,999",
+    yearlyPrice: "47,999",
+  };
+export const pricingCard_2 = {
+    title: "Full Access",
+    subtitle: "Premium access across ALL spaces",
+    monthlyPrice: "9,999",
+    yearlyPrice: "95,999",
+  };
+export const pricingCard_3 = {
+    title: "Personal Branding",
+    subtitle: "Get ready to pitch yourself to global business",
+    monthlyPrice: "4,999",
+    yearlyPrice: "47,999",
+  }; 
