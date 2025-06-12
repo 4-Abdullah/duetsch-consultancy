@@ -1,20 +1,8 @@
-import React from "react";
+// Data block
+import { Stats_Data } from "../about/data";
 
 export default function AboutStats_Section() {
-  const Stats_Data = [
-    {
-      title: "Events Hosted",
-      number: "20",
-    },
-    {
-      title: "Premium Members",
-      number: "200",
-    },
-    {
-      title: "Hours of Sessions",
-      number: "500",
-    },
-  ];
+  
   return (
     <div>
       <div className="h-10" />

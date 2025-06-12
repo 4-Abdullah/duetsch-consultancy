@@ -1,73 +1,10 @@
-import React from "react";
+// Component block
 import FAQS_card from "./FAQS_card";
 import BrandingFocus from "./BrandingFocus";
-
+// Data block
+import { Feature_FAQS_Data, Feature_FAQS_Style } from "../branding/data";
 export default function BrandingCourseInfo() {
-  const Feature_FAQS_Data = [
-    {
-      question: "🏗️ Introduction & Foundational Content",
-      answer: `You will understand why building a digital brand matters and how digital media works.
-             You’ll explore different types of digital media, the evolution of the internet globally and in Pakistan,
-              and get insights into genres across platforms like YouTube and Instagram.`,
-    },
-    {
-      question: "🎯 Niche Selection",
-      answer: `Focuses on helping you choose a niche by identifying your strengths and market potential. You’ll learn about
-            building your brand, understanding your audience, and maintaining consistency. You'll also get introduced to Notion,
-             learning how to set it up and organize your content efficiently.`,
-    },
-    {
-      question: "🧑‍🤝‍🧑 Understanding the Content & Audience",
-      answer: `You’ll dive into understanding your audience and analyzing content platforms. Learn how to build influence,
-            create relatable or aspirational content, and establish a community. You’ll also explore audience research methods
-            and start structuring your content strategy.`,
-    },
-    {
-      question: "🗣️ Scripting and Visualization of a Piece of Content",
-      answer: `Covers the basics of scripting, including writing hooks and formatting scripts. You'll also learn how to
-             create shot lists and plan your content visually for maximum impact.`,
-    },
-    {
-      question: "🎥 Filming Basics",
-      answer: `Basics of filming, including framing, lighting, and sound quality. Understand how to compose shots, use a
-             camera effectively, and apply photography and videography principles to your first video project.`,
-    },
-    {
-      question: "🎞️ Video Editing",
-      answer: `This week is all about editing your filmed content. You'll explore tools like Capcut, Premiere Pro, and
-             Canva for video editing and thumbnail creation. Learn how to add transitions, effects, and background music to
-              make your video visually appealing.`,
-    },
-    {
-      question: "📈 Social Media Analytics, Scaling, Monetization & PR",
-      answer: `How to measure your content's performance on Instagram, YouTube, and LinkedIn using analytics. Learn
-             strategies for scaling your digital brand, explore monetization methods like affiliate marketing and sponsored
-              content, and get an introduction to PR strategies for growth.`,
-    },
-    {
-      question:
-        "⚔️ Launching a Digital Course (Value Proposition and Planning)",
-      answer: `Basics of creating and launching a digital course. Understand how to define the problem your course solves,
-             build its value proposition, design a course structure, and choose the right platform to host it.`,
-    },
-    {
-      question: "🌐 Creating and Managing Community",
-      answer: `Focuses on community building. You’ll learn how to set up community spaces on platforms like Skool and Circle
-             and get tips on scaling and managing your community effectively.`,
-    },
-    {
-      question: "⚖️ Legal/Ethics & Future of Social Media",
-      answer: `Covers the legal and ethical side of content creation, including copyrights, trademarks, and fair use. You’ll
-             also explore content ownership and discuss the future of social media to prepare for what lies ahead.`,
-    },
-  ];
-
-  const Feature_FAQS_Style = {
-    bg: "bg-[#241C36]",
-    textsize: "text-lg",
-    textcolor: "text-white",
-    padding: "pt-8 pl-7 pr-3 pb-8",
-  };
+ 
 
   return (
     <section class=" text-[#8474B4] sm:p-8 rounded-2xl shadow-lg">

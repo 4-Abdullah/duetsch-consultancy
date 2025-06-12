@@ -5,8 +5,9 @@ import AboutTeam from "../components/AboutTeam";
 import CEO_Message from "../components/CEO_Message";
 import CtaSection from "../components/CtaSection";
 import Header from "../components/Header";
-import { titleWords } from "./data"
 import Onscroll from "./Onscroll";
+// Data block
+import { titleWords } from "./data"
 
 function About() {
  
@@ -21,9 +22,7 @@ function About() {
       <Onscroll>
                 <CEO_Message/>
       </Onscroll>
-      <Onscroll>
-                <AboutTeam/>
-      </Onscroll>
+      <AboutTeam/>
      <Onscroll>
                 <AboutStats_Section/>
       </Onscroll> 

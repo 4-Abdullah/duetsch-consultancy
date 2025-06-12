@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Integration from "./components/Integration";
 import PricingSection from "./components/PricingSection";
 import UserSay from "./components/UserSay";
+// Data block
 import {
   titleWords,
   description,
@@ -19,7 +20,7 @@ import {
 
 const Home = async () => {
   return (
-    <div className="mt-15 text-[#8C87AA] bg-[#0C0512] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-poppins)]">
+    <div className="mt-15 text-[#8C87AA] bg-[#0C0512] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 font-[family-name:var(--font-poppins)]">
       <Header
         title={titleWords}
         subtitle={description}

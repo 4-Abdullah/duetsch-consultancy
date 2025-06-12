@@ -4,12 +4,12 @@ import CtaSection from "../components/CtaSection";
 import FAQS from "../components/FAQS";
 import Header from "../components/Header";
 import PricingSection from "../components/PricingSection";
+// Data block
 import { titleWords, FAQS_heading, FAQS_Data } from "./data";
 function Pricing() {
     
- 
   return (
-    <div className="mt-15 text-[#8C87AA] bg-[#0C0512] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-poppins)]">
+    <div className="mt-15 text-[#8C87AA] bg-[#0C0512] items-center justify-items-center min-h-screen p-2 pb-20 gap-16 font-[family-name:var(--font-poppins)]">
       <Header title={titleWords}/>
       <PricingSection/>
       <ComparePlan/>

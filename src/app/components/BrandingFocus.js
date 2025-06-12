@@ -1,71 +1,11 @@
-import React from "react";
+// Package Block
 import Image from "next/image";
+// Component block
 import { btnContent } from "../data";
 import Button from "./Button";
-
+// Data block
+import { Branding_focus_Data1, Branding_focus_Data2 } from "../branding/data";
 export default function BrandingFocus() {
-  const Branding_focus_Data1 = [
-    {
-      image: "/Community Interaction.png",
-      title: "Community Interaction",
-      description: (
-        <>
-          Connect with like-minded individuals who share your goals. Your chance
-          of success in achieving any goal gets much higher if you
-          <strong> join a group</strong> aiming to do the same. We've observed
-          the same with our students and have doubled down on this!
-        </>
-      ),
-    },
-    {
-      image: "/Fundamentals, not Fads.png",
-      title: "Fundamentals, not Fads",
-      description: (
-        <>
-          Gain a deep comprehension of core principles to navigate the
-          fast-evolving social media landscape effectively. This is not just
-          another course about the latest tools—understanding the{" "}
-          <strong>"why"</strong> behind strategies is crucial for lasting
-          success.
-        </>
-      ),
-    },
-  ];
-  const Branding_focus_Data2 = [
-    {
-      image: "/Data Analytics.png",
-      title: "Data Analytics",
-      description: (
-        <>
-          Learn to harness the power of data to drive your digital media
-          strategy. This course emphasizes analyzing data to inform decisions
-          and shape your content philosophy, a unique approach backed by
-          Muzamil's extensive background in data analytics.
-          <br />
-          <br />
-          You’ll gain the skills to make data-driven choices that set you apart
-          in the digital space.
-        </>
-      ),
-    },
-    {
-      image: "/Systems for Scaling.jpg",
-      title: "Systems for Scaling",
-      description: (
-        <>
-          We don’t just teach theory—we provide the <strong>systems</strong> and{" "}
-          <strong>tools</strong> to get you up and running quickly, allowing you
-          to scale your efforts without the constant struggle of balancing it
-          all yourself.
-          <br />
-          <br />
-          Our Notion templates, in particular, have been a hit among our
-          students, offering streamlined workflows that save time and keep you
-          organized.
-        </>
-      ),
-    },
-  ];
 
   return (
     <div className="pt-8 ">
