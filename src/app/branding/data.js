@@ -16,7 +16,8 @@ export const LogosViewType = {
   width: "",
   logoWidth:"w-full",
     logoHeight:"h-[30px]",
-    logoTotalheight:"h-[200px]"
+    logoTotalheight:"h-[120px]"
+   
 }
 
 export const Feature_FAQS_Data = [

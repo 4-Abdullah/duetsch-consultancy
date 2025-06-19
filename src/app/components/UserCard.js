@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function UserCard({ name, title, image, comment }) {
   return (
     <div
-      className="snap-start w-72 p-4 sm:p-6 border-[#24163D]  bg-[radial-gradient(53.6%_29.4%_at_13.5%_10.2%,_rgb(36,28,54)_0%,_rgb(6,4,13)_100%)]
+      className="w-72 p-6 border-[#24163D]  bg-[radial-gradient(53.6%_29.4%_at_13.5%_10.2%,_rgb(36,28,54)_0%,_rgb(6,4,13)_100%)]
              rounded-4xl shadow-lg border"
     >
       <p>{comment}</p>

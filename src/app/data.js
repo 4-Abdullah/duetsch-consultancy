@@ -175,6 +175,9 @@ export const Logos = [
       image: "/HarvardUniversity.png",
     },
     {
+      image: "/Sarmaaya.png"
+    },
+    {
       image: "/airbnb.png",
     },
   ];
@@ -265,3 +268,219 @@ export const pricingCard_3 = {
     monthlyPrice: "4,999",
     yearlyPrice: "47,999",
   }; 
+export const animationbox_Hgroup_1 = [
+    {   
+        
+       position:"col-start-2 sm:col-start-2 md:col-start-2 lg:col-start-3 xl:col-start-5 row-start-2"
+    },
+    {   
+
+       position:"col-start-4 sm:col-start-7 md:col-start-5 lg:col-start-8 xl:col-start-10 row-start-2"
+    },
+    {   
+
+       position:"col-start-2 sm:col-start-2 md:col-start-2 lg:col-start-3 xl:col-start-5 row-start-4"
+    },
+    {   
+
+       position:"col-start-3 sm:col-start-8 md:col-start-6 lg:col-start-9 xl:col-start-11 row-start-7 sm:row-start-4"
+    },
+    {   
+
+       position:"col-start-6 sm:col-start-10 md:col-start-8 lg:col-start-11 xl:col-start-15 row-start-4"
+    },
+    {   
+
+       position:"col-start-5 sm:col-start-9 md:col-start-7 lg:col-start-10 xl:col-start-14 row-start-7"
+    },
+    {   
+
+       position:"col-start-4 sm:col-start-4 md:col-start-4 lg:col-start-7 xl:col-start-8 row-start-5 sm:row-start-5"
+    },
+    {   
+
+       position:"col-start-1 sm:col-start-13 md:col-start-10 lg:col-start-13 xl:col-start-20 row-start-3"
+    },
+    {   
+
+       position:"col-start-4 sm:col-start-12 md:col-start-9 lg:col-start-12 xl:col-start-19 row-start-7 sm:row-start-5"
+    },
+] 
+export  const animationbox_Hgroup_2 = [
+    {   
+        
+       position:"col-start-5 sm:col-start-4 md:col-start-4 lg:col-start-6 xl:col-start-8 row-start-2"
+    },
+    {   
+
+       position:"col-start-2 sm:col-start-3 md:col-start-3 lg:col-start-4 xl:col-start-6 row-start-4"
+    },
+    {   
+
+       position:"col-start-4 sm:col-start-6 md:col-start-6 lg:col-start-8 xl:col-start-13 row-start-4"
+    },
+    {   
+
+       position:"col-start-6 sm:col-start-1 md:col-start-8 lg:col-start-10 xl:col-start-15 row-start-1 sm:row-start-3"
+    },
+    {   
+
+       position:"col-start-6 sm:col-start-13 md:col-start-1 lg:col-start-12 xl:col-start-19 row-start-5 sm:row-start-2"
+    },
+    {   
+
+       position:"col-start-3 sm:col-start-12  md:col-start-10 lg:col-start-11 xl:col-start-17 row-start-7"
+    },
+    {   
+
+       position:"col-start-5  sm:col-start-5 md:col-start-5 lg:col-start-7 xl:col-start-10 row-start-6"
+    },
+    
+] 
+export const animationbox_Hgroup_3 = [
+    {   
+        
+       position:"col-start-1 sm:col-start-2 md:col-start-1 lg:col-start-2 xl:col-start-4 row-start-2"
+    },
+    {   
+
+       position:"col-start-5 sm:col-start-11 md:col-start-9 lg:col-start-12 xl:col-start-18 row-start-5"
+    },
+    {   
+
+       position:"col-start-2 sm:col-start-7 md:col-start-6 lg:col-start-9 xl:col-start-13 row-start-3"
+    },
+    {   
+
+       position:"col-start-3 sm:col-start-7 md:col-start-2 lg:col-start-10 xl:col-start-14 row-start-6"
+    },
+    {   
+
+       position:"col-start-4 sm:col-start-4 md:col-start-3 lg:col-start-6  xl:col-start-8 row-start-7"
+    },
+    {   
+
+       position:"col-start-1 sm:col-start-5 md:col-start-4 lg:col-start-7 xl:col-start-9 row-start-6"
+    },
+    {   
+
+       position:"col-start-3 sm:col-start-6 md:col-start-5 lg:col-start-8 xl:col-start-11 row-start-4"
+    },
+    {   
+
+       position:"col-start-2 sm:col-start-13 md:col-start-10 lg:col-start-11 xl:col-start-18 row-start-5"
+    },
+    {   
+
+       position:"col-start-5 sm:col-start-11 md:col-start-1 lg:col-start-13 xl:col-start-17 row-start-7"
+    },
+    
+] 
+export const animationbox_Fgroup_1 = [
+    {   
+        
+       position:"col-start-2 sm:col-start-2 md:col-start-2 lg:col-start-3 xl:col-start-5 row-start-2"
+    },
+    {   
+
+       position:"col-start-4 sm:col-start-7 md:col-start-5 lg:col-start-8 xl:col-start-10 row-start-2"
+    },
+    {   
+
+       position:"col-start-2 sm:col-start-2 md:col-start-2 lg:col-start-3 xl:col-start-5 row-start-4"
+    },
+    {   
+
+       position:"col-start-3 sm:col-start-8 md:col-start-6 lg:col-start-9 xl:col-start-11 row-start-4"
+    },
+    {   
+
+       position:"col-start-6 sm:col-start-10 md:col-start-8 lg:col-start-11 xl:col-start-15 row-start-4"
+    },
+    {   
+
+       position:"col-start-5 sm:col-start-9 md:col-start-7 lg:col-start-10 xl:col-start-14 row-start-5"
+    },
+    {   
+
+       position:"col-start-4 sm:col-start-4 md:col-start-4 lg:col-start-7 xl:col-start-8 row-start-5"
+    },
+    {   
+
+       position:"col-start-1 sm:col-start-13 md:col-start-10 lg:col-start-13 xl:col-start-20 row-start-3"
+    },
+    {   
+
+       position:"col-start-4 sm:col-start-12 md:col-start-9 lg:col-start-12 xl:col-start-19 row-start-5"
+    },
+] 
+export  const animationbox_Fgroup_2 = [
+    {   
+        
+       position:"col-start-5 sm:col-start-4 md:col-start-4 lg:col-start-6 xl:col-start-8 row-start-2"
+    },
+    {   
+
+       position:"col-start-2 sm:col-start-3 md:col-start-3 lg:col-start-4 xl:col-start-6 row-start-4"
+    },
+    {   
+
+       position:"col-start-4 sm:col-start-6 md:col-start-6 lg:col-start-8 xl:col-start-13 row-start-4"
+    },
+    {   
+
+       position:"col-start-6 sm:col-start-1 md:col-start-8 lg:col-start-10 xl:col-start-15 row-start-1 sm:row-start-3"
+    },
+    {   
+
+       position:"col-start-6 sm:col-start-13 md:col-start-1 lg:col-start-12 xl:col-start-19 row-start-5 sm:row-start-2"
+    },
+    {   
+
+       position:"col-start-3 sm:col-start-12  md:col-start-10 lg:col-start-11 xl:col-start-17 row-start-1"
+    },
+    {   
+
+       position:"col-start-5  sm:col-start-5 md:col-start-5 lg:col-start-7 xl:col-start-10 row-start-2"
+    },
+    
+] 
+export const animationbox_Fgroup_3 = [
+    {   
+        
+       position:"col-start-1 sm:col-start-2 md:col-start-1 lg:col-start-2 xl:col-start-4 row-start-2"
+    },
+    {   
+
+       position:"col-start-5 sm:col-start-11 md:col-start-9 lg:col-start-12 xl:col-start-18 row-start-5"
+    },
+    {   
+
+       position:"col-start-2 sm:col-start-7 md:col-start-6 lg:col-start-9 xl:col-start-13 row-start-3"
+    },
+    {   
+
+       position:"col-start-3 sm:col-start-7 md:col-start-2 lg:col-start-10 xl:col-start-14 row-start-1"
+    },
+    {   
+
+       position:"col-start-4 sm:col-start-4 md:col-start-3 lg:col-start-6  xl:col-start-8 row-start-2"
+    },
+    {   
+
+       position:"col-start-1 sm:col-start-5 md:col-start-4 lg:col-start-7 xl:col-start-9 row-start-1"
+    },
+    {   
+
+       position:"col-start-3 sm:col-start-6 md:col-start-5 lg:col-start-8 xl:col-start-11 row-start-4"
+    },
+    {   
+
+       position:"col-start-2 sm:col-start-13 md:col-start-10 lg:col-start-11 xl:col-start-18 row-start-5"
+    },
+    {   
+
+       position:"col-start-5 sm:col-start-11 md:col-start-1 lg:col-start-13 xl:col-start-17 row-start-2"
+    },
+    
+] 
