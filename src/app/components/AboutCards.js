@@ -4,7 +4,6 @@ import React from "react";
 export default function AboutCards() {
   return (
     <div>
-      <div className="h-15" />
       <div className="flex flex-col sm:flex-col md:flex-row">
         <Image
           className="w-full md:w-1/2 lg:w-lg border border-t-0 border-b-violet-500 border-x-[#C47BF7] rounded-4xl h-full md:h-1/2 lg:h-[500px] "

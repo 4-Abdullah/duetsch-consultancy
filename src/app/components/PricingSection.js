@@ -11,7 +11,7 @@ export default function PricingSection() {
   const [subscriptionType, setSubscriptionType] = useState("monthly");
 
   return (
-    <div className="flex flex-col items-center gap-10 pt-18 sm:pt-5 bg-[#0C0512]">
+    <div className="mt-10 flex flex-col items-center gap-10 pt-18 sm:pt-5 bg-[#0C0512]">
       <div className="flex flex-col items-center ">
         <h3 className="text-[30px] sm:text-[40px] md:text-[52px] text-white font-medium tracking-tight text-center leading-[40px] sm:leading-[68px]">
           Price Starts As Low As <br /> PKR 3999* Per Month

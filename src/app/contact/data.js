@@ -6,17 +6,20 @@ export const ContactInfo_Data = [
         {   
             image:"/tel.png",
             title:"+971 509 511 300",
-            description:"Reach out to us on WhatsApp"
+            description:"Reach out to us on WhatsApp",
+            height:"h-60"
         },
         {
             image:"/email.png",
             title:"hello@kamyabinetwork.com",
-            description:"Reach out to our sales team for more information."
+            description:"Reach out to our sales team for more information.",
+            height:"h-65"
         },
         {   
             image:"/location.png",
             title:"one8nine FZCO",
-            description:"Building A1, Dubai Digital Park, Dubai Silicon Oasis, Dubai, United Arab Emirates"
+            description:"Building A1, Dubai Digital Park, Dubai Silicon Oasis, Dubai, United Arab Emirates",
+            height:"h-70"
         },
 
     ]

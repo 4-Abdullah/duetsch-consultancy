@@ -54,7 +54,7 @@ function Header({ title, actionBtn, subtitle, secondarytitle }) {
             <br />
           )}
       </div>
-      <div className="h-1 sm:h-1 md:h-10"/>
+      <div className="h-1"/>
     </div>
   );
 }
