@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+// Package block
+import { useState } from "react";
 
 export default function FAQS_card({ index, question, answer,style }) {
   const [toggleicon, setToggleicon] = useState(null);
@@ -14,9 +15,9 @@ export default function FAQS_card({ index, question, answer,style }) {
       className={`${style.bg} text-wrap cursor-pointer mx-auto  border-[#24163D]  
     rounded-2xl shadow-lg border`}
     >
-      <div className={`w-full  sm:w-full text-sm md:${style.textsize} px-4 sm:gap-0 text-white ${style.padding} rounded-lg`}>
+      <div className={`w-full text-sm md:${style.textsize} px-4 sm:gap-0 text-white ${style.padding} rounded-lg`}>
         <div className="flex justify-between">
-            <span className="flex-auto sm:w-full text-wrap break-words">{question}</span>
+            <span className="flex-auto text-wrap break-words">{question}</span>
             <span
               className={`text-right transition-transform duration-300 ${
                 toggleicon === index ? "rotate-180" : ""

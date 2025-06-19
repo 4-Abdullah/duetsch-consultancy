@@ -26,11 +26,11 @@ export default function BrandingFocus() {
         </div>
         <h3 class="text-5xl font-bold text-white mt-4">What we Focus on</h3>
       </div>
-      <div className="w-full sm:w-[85vw] md:w-full flex flex-col sm:flex-col md:flex-row gap-y-5 sm:gap-y-5 md:gap-x-5">
+      <div className="w-full sm:w-[85vw] md:w-full flex flex-col md:flex-row gap-y-5 md:gap-x-5">
         {Branding_focus_Data1.map((data, index) => (
           <div
             key={index}
-            class="w-full sm:w-full md:w-md mx-auto p-3 sm:p-8 bg-[#241C36] border  rounded-xl shadow-lg overflow-hidden"
+            class="w-full md:w-md mx-auto p-3 sm:p-8 bg-[#241C36] border  rounded-xl shadow-lg overflow-hidden"
           >
             {/* <!-- Image Section --> */}
             <div class="flex justify-center items-center pt-5 pb-15">
@@ -45,10 +45,10 @@ export default function BrandingFocus() {
 
             {/* <!-- Content Section --> */}
             <div>
-              <h3 className="text-lg sm:text-2xl md:text-2xl font-semibold text-white">
+              <h3 className="text-lg sm:text-2xl font-semibold text-white">
                 {data.title}
               </h3>
-              <p className="text-xs sm:text-[16px] text-gray-300 w-full sm:w-full  text-wrap mt-4">
+              <p className="text-xs sm:text-[16px] text-gray-300 w-full text-wrap mt-4">
                 {data.description}
               </p>
             </div>
@@ -56,18 +56,18 @@ export default function BrandingFocus() {
         ))}
       </div>
       <br />
-      <div className="w-full sm:w-[85vw] md:w-full  flex flex-col sm:flex-col  gap-y-10">
+      <div className="w-full sm:w-[85vw] md:w-full  flex flex-col gap-y-10">
         {Branding_focus_Data2.map((data, index) => (
           <div
             key={index}
-            class="w-full flex flex-col sm:flex-col md:flex-row sm:w-full md:w-full gap-x-10 mx-auto p-3 sm:p-8 bg-[#241C36] border  rounded-xl shadow-lg overflow-hidden"
+            class="w-full flex flex-col md:flex-row sm:w-full gap-x-10 mx-auto p-3 sm:p-8 bg-[#241C36] border  rounded-xl shadow-lg overflow-hidden"
           >
             {/* <!-- Content Section --> */}
             <div className="flex flex-col">
               <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">
                 {data.title}
               </h3>
-              <p className="text-xs sm:text-sm md:text-[16px] text-gray-300 w-full sm:w-full text-wrap mt-4">
+              <p className="text-xs sm:text-sm md:text-[16px] text-gray-300 w-full text-wrap mt-4">
                 {data.description}
               </p>
             </div>
@@ -75,7 +75,7 @@ export default function BrandingFocus() {
             {/* <!-- Image Section --> */}
             <div>
               <Image
-                class="w-full sm:w-full md:w-[1500px] h-60 sm:h-90 md:h-full  rounded-2xl object-cover"
+                class="w-full md:w-[1500px] h-60 sm:h-90 md:h-full  rounded-2xl object-cover"
                 width={300}
                 height={300}
                 src={data.image}

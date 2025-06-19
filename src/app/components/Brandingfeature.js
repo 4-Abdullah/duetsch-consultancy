@@ -1,5 +1,6 @@
-import React from "react";
+// Component block
 import Button from "./Button";
+// Data block
 import { btnContent } from "../data";
 
 export default function Brandingfeature() {
@@ -12,10 +13,10 @@ export default function Brandingfeature() {
       <div className=" sm:w-[80vw] md:w-2xl lg:w-3xl ">
         {/* <!-- Card Head Block --> */}
         <div>
-          <h2 className="text-4xl sm:text-4xl md:text-5xl  text-center">
+          <h2 className="text-4xl md:text-5xl  text-center">
             <strong>Digitise</strong> Yourself Now.
           </h2>
-          <h2 className="text-4xl sm:text-4xl md:text-5xl text-center mt-2">
+          <h2 className="text-4xl md:text-5xl text-center mt-2">
             Don't Get <strong>Left Behind</strong>.
           </h2>
           <div className="border-b border-gray-400 my-6"></div>

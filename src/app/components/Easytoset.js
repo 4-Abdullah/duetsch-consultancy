@@ -1,9 +1,11 @@
 "use client";
+// Package block
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 // Component block
-import { Step_cardData } from "../data";
 import Easytoset_Card from "./EasytosetCard";
+// Data block
+import { Step_cardData } from "../data";
 
 export default function Easytoset() {
   const containerRef = useRef(null);
@@ -52,15 +54,14 @@ export default function Easytoset() {
   }, [cardCount]);
 
   return (
-    <div id="cardsContainer" className="w-full pt-32">
-      <section id="facilities" className="w-full">
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-y-10 gap-40">
-          <div ref={containerRef} className="  lg:h-[600vh]">
+      <section id="facilities" className="pt-32 w-[90vw] xl:w-[80vw]">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-y-10 xl:gap-40">
+          <div ref={containerRef} className="w-full h-[800vh]">
             {Step_cardData.map((data, index) => (
               <div
                 key={index}
                 ref={(el) => (cardRefs.current[index] = el)}
-                className="lg:sticky lg:top-30 lg:z-10 relative"
+                className="sticky top-30 z-10 sm:sticky sm:top-30 md:top-30 sm:z-10"
               >
                 <Easytoset_Card
                   title={data.title}
@@ -75,6 +76,5 @@ export default function Easytoset() {
           </div>
         </div>
       </section>
-    </div>
   );
 }

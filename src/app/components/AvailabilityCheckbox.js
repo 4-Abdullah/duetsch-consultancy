@@ -1,6 +1,6 @@
 export function Truebox() {
   return (
-    <div className="bg-[#4f60fa] w-7 h-7 sm:w-7 sm:h-7 md:w-8 md:h-8  rounded-lg opacity-100 flex items-center justify-center p-3">
+    <div className="bg-[#4f60fa] w-7 h-7 md:w-8 md:h-8  rounded-lg opacity-100 flex items-center justify-center p-3">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         focusable="false"
@@ -15,7 +15,7 @@ export function Truebox() {
 
 export function Falsebox() {
   return (
-    <div className="bg-[rgba(255,255,255,0.3)] w-7 h-7 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-lg opacity-100 flex items-center justify-center p-3">
+    <div className="bg-[rgba(255,255,255,0.3)] w-7 h-7 md:w-8 md:h-8 rounded-lg opacity-100 flex items-center justify-center p-3">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         focusable="false"

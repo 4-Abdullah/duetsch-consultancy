@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function CEO_Message() {
   return (
-    <div className='w-full sm:w-full flex flex-col text-center items-center'>
+    <div className='w-full flex flex-col text-center items-center'>
     <div className='w-[300px] sm:w-xl md:w-2xl '>
-        <div className='text-3xl sm:text-3xl md:text-5xl text-white sm:leading-[38px] md:leading-[64px] tracking-[-0.04em] sm:tracking-[-0.04em]'>
+        <div className='text-3xl md:text-5xl text-white sm:leading-[38px] md:leading-[64px] tracking-[-0.04em] sm:tracking-[-0.04em]'>
             Founder's Message to Our Like-Minded Community
         </div>
         <div className='h-5'/>
-        <div className='text-[14px] sm:text-[14px] md:text-[16px]'>
+        <div className='text-[14px] md:text-[16px]'>
             A personal message from our CEO, sharing insights and inspiration for all those who share our passion
              for building Pakistan's Tech Industry.
         </div>

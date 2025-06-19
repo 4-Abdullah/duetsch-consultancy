@@ -10,10 +10,10 @@ export default function ContactUsform() {
   };
 
   return (
-    <div className="text-left sm:text-left">
+    <div className="text-left">
       <form
         onSubmit={handleSubmit}
-        className={`sm:w-full lg:w-xl flex flex-col p-5 sm:p-5 md:p-10 gap-y-10 border
+        className={`w-full lg:w-xl flex flex-col p-5 md:p-10 gap-y-10 border
             border-b-violet-500 border-x-[#C47BF7] rounded-3xl border-t-[#24163D]
             bg-[radial-gradient(53.6%_29.4%_at_13.5%_10.2%,_rgb(36,28,54)_0%,_rgb(6,4,13)_100%)]
             hover:bg-[radial-gradient(53.6%_75%_at50%_50%,_rgb(36,28,54)_0%,_rgb(6,4,13)_100%)]

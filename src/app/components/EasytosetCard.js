@@ -20,14 +20,14 @@ export default function Easytoset_Card({
       className={`flex flex-col h-11/12 items-center xl:p-4 rounded-lg shadow-md transition-transform duration-500 ease-in-out
        ${activeIndex === stepcount ? "opacity-100" : "opacity-0"} `}
     >
-      <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row w-full h-11/12 sm:w-full sm:h-full xl:h-full">
-        <div className="relative w-full sm:w-full md:w-full h-[35vh] sm:h-[40vh] md:h-[60vh] lg:h-[60vh] xl:h-full">
+      <div className="flex flex-col md:flex-row w-full h-11/12 sm:w-full sm:h-full xl:h-full">
+        <div className="relative w-full h-[35vh] sm:h-[40vh] md:h-[60vh] lg:h-[60vh] xl:h-full">
           <Image
             src={image}
             alt="Secondary Image"
             width={400}
             height={400}
-            className={`h-[35vh] sm:h-[40vh] md:h-full w-full sm:w-full md:w-full lg:w-[400px] xl:w-[480px] rounded-2xl  md:object-contain transition-opacity duration-1000 `}
+            className={`h-[35vh] sm:h-[40vh] md:h-full w-full lg:w-[400px] xl:w-[480px] rounded-2xl  md:object-contain transition-opacity duration-1000 `}
           />
         </div>
         <div className="h-[5px] sm:w-[100px] xl:w-[100px] opacity-0"></div>

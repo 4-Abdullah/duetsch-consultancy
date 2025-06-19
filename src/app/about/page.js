@@ -13,9 +13,7 @@ function About() {
  
   return (
      <div className="mt-15 text-[#8C87AA] items-center justify-items-center min-h-screen p-5 gap-16 font-[family-name:var(--font-poppins)]">
-      <Onscroll>
-                <Header title={titleWords}/>
-      </Onscroll>
+    <Header title={titleWords}/>
        <Onscroll>
                 <AboutCards/>
       </Onscroll>

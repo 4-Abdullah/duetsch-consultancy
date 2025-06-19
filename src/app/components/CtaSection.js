@@ -1,5 +1,6 @@
-import React from "react";
+// Component block 
 import Button from "./Button";
+// Data block
 import { btnContent } from "../data";
 export default function CtaSection() {
   return (
@@ -14,7 +15,7 @@ export default function CtaSection() {
             <h3 className="text-white text-[26px] sm:text-[52px] font-medium leading-[30px] sm:leading-[68px] sm:tracking-[-0.04em]">
               Be a part of the new AI Age
             </h3>
-            <h2 className="text-[8px] sm:text-[16px] mt-4 max-w-sm">
+            <h2 className="text-[8px] sm:text-[16px] mt-4 ">
               Join the Kamyabi Network today and be a part of a meaningful
               revolution in Pakistan's Tech Industry. See you inside!
             </h2>

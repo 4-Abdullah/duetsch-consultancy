@@ -1,3 +1,4 @@
+// Package Block
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -7,7 +8,7 @@ export default function Branding_moreQuestions() {
     <div className="flex flex-col items-center text-center">
       <div className="h-20" />
 
-      <div class="flex flex-col sm:w-full lg:w-[800px] border rounded-2xl bg-gradient-to-b from-[#0C0512] to-[#241C36] gap-10 items-center p-4 sm:p-10">
+      <div class="flex flex-col w-full lg:w-[800px] border rounded-2xl bg-gradient-to-b from-[#0C0512] to-[#241C36] gap-10 items-center p-4 sm:p-10">
         <div class="flex justify-center w-full h-[400px] rounded-xl overflow-hidden">
           <Image
             width={720}

@@ -5,7 +5,7 @@ export default function AboutFounder() {
   return (
    
    
-    <div className="relative flex flex-col w-full items-center justify-center px-4 py-8">
+    <div className="relative flex flex-col w-[90vw] items-center justify-center px-0 sm:px-4 py-8">
  
   <div className="relative rounded-t-4xl w-full h-[45px]">
     

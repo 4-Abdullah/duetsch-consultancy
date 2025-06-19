@@ -1,9 +1,9 @@
-import React from "react";
+// Component block
 import Card from "./Card";
 
 export default function FeaturesSection() {
   return (
-    <div className="pt-60 w-full  relative flex flex-col items-center justify-center px-4 py-8 bg-[#0C0512]">
+    <div className="pt-60 w-[90vw] xl:w-full relative flex flex-col items-center justify-center px-4 py-8 bg-[#0C0512]">
       <div className="flex flex-col justify-center sm:w-xl md:w-2xl text-center shrink-0 transform-none outline-none">
         <h3 className="text-white  text-center  text-[52px] leading-[54px] tracking-[-0.06em]">
           Built for Founders, Freelancers, and Professionals

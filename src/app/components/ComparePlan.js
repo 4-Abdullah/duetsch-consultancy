@@ -4,7 +4,7 @@ import { Falsebox, Truebox } from "./AvailabilityCheckbox";
 import { Tabledata } from "../pricing/data";
 export default function ComparePlan() {
   return (
-    <div className="w-[90vw] sm:w-[90vw] md:w-[90vw] pt-20 xl:w-6xl h-full">
+    <div className="w-[90vw] pt-20 xl:w-6xl h-full">
       <div className=" flex flex-col items-center text-center">
         {/* Title */}
         <h3 className="text-white  text-3xl sm:text-4xl md:text-5xl font-medium leading-[35px] sm:leading-[54px] tracking-tight">
@@ -19,18 +19,18 @@ export default function ComparePlan() {
       </div>
       <div className="h-10 sm:h-20 " />
 
-      <table className="table-auto text-center sm:w-full w-full ">
+      <table className="table-auto text-center w-full ">
         <thead>
           <tr className="w-full text-[16px] sm:text-[16px] md:text-2xl h-50 sm:h-50 md:h-25 text-white">
-            <td className="w-full sm:h-30 sm:w-full md:w-full lg:w-full"></td>
+            <td className="w-full sm:h-30"></td>
             <td className="w-full p-0 sm:p-2">
-              <div className="w-[15vw] sm:w-25 md:w-[18vw] lg:w-[18vw] md:h-full rotate-90 sm:rotate-90 md:rotate-0 ">Artificial Intelligence</div></td>
+              <div className="w-[15vw] sm:w-25 md:w-[18vw] md:h-full rotate-90 sm:rotate-90 md:rotate-0 ">Artificial Intelligence</div></td>
             <td className="border-t border-l border-r border-[#251E2A] p-0 sm:p-2">
-             <div className="w-[15vw] sm:w-25 md:w-[18vw] lg:w-[18vw] md:h-full rotate-90 sm:rotate-90 md:rotate-0 ">
+             <div className="w-[15vw] sm:w-25 md:w-[18vw] md:h-full rotate-90 sm:rotate-90 md:rotate-0 ">
               Full Access</div>
             </td>
             <td className="p-0 sm:p-2">
-             <div className="w-[15vw] sm:w-25 md:w-[18vw] lg:w-[18vw] md:h-full rotate-90 sm:rotate-90 md:rotate-0 ">
+             <div className="w-[15vw] sm:w-25 md:w-[18vw] md:h-full rotate-90 sm:rotate-90 md:rotate-0 ">
             Personal Branding</div>
             </td>
           </tr>
