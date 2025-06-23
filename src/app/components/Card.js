@@ -43,33 +43,33 @@ const Card = ({
     : "opacity-100 translate-y-0";
 
   return (
- <div
-  ref={cardRef}
-  className={`
-    relative md:mx-auto flex flex-col  w-[100%] max-w-xl  
-    border border-t-0 border-b-violet-500 border-x-[#C47BF7] 
-    sm:w-fit md:max-w-[100%] rounded-2xl 
-    shadow-lg transition-all duration-500 transform 
-    ${animationClasses}
-  `}
->
-  {/* Wrapper for the image container using an aspect ratio */}
-  <div className="relative w-full overflow-hidden rounded-t-2xl">
-    {/* The aspect-[16/9] sets the height according to the width so the container tightly fits the image aspect */}
+   <div
+      ref={cardRef}
+      className={`
+        relative flex flex-col  w-[100%] 
+        border border-t-0 border-b-violet-500 border-x-[#C47BF7] 
+        sm:w-fit md:max-w-[100%] rounded-2xl 
+        shadow-lg transition-all duration-500 transform 
+        ${animationClasses}
+      `}
+    > 
+  <div className="relative w-full overflow-hidden rounded-t-2xl"
+    style={{
+          maskImage:
+            "linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%)",
+          WebkitMaskImage:
+            "linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%)", // Required for Safari support
+        }}>
     <div
       className="aspect-[16/9] bg-center bg-no-repeat bg-cover"
       style={{ backgroundImage: `url(${image})` }}
     ></div>
   </div>
-  
-  {/* Bottom Content – follows immediately under the image container */}
-  <div className="w-full select-none rounded-b-2xl p-3 sm:p-8 bg-[#0D0713]">
-    <h2 className="text-[16px] sm:text-2xl text-white">{title}</h2>
-    <p className="pt-2 text-xs sm:text-sm">{description}</p>
-  </div>
+    <div className="w-full select-none rounded-b-2xl p-3 sm:p-5 bg-[#0D0713]">
+      <h2 className="text-[16px] sm:text-2xl text-white">{title}</h2>
+      <p className="pt-2 text-sm sm:text-base">{description}</p>
+    </div>
 </div>
-
-
 
   );
 };
