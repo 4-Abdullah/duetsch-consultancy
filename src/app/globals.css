@@ -19,8 +19,386 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Custom screen sizes */
+@media (max-width: 1198px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Switch to 2 columns */
+    gap: 16px;
+  }
+}
+
+@media (max-width: 850px) {
+  .card-container-small {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* Switch to 1 columns */
+    gap: 16px;
+  }
+}
+
+
+
+/* Logos Carousel animation */
+@keyframes logoLoop {
+ from{
+    transform: translateX(0%);
+}
+
+  to {
+     transform: translateX(calc(-100% - var(--gap)));
+     }   /* Move to left */
+}
+
+@keyframes card-colLoop-downward {
+  from {
+    transform: translateY(calc(-100% - var(--gap) ));
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+
+}
+
+@keyframes card-colLoop-upward {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+        transform: translateY(calc(-100% - var(--gap) ));
+  }
+
+}
+
+@keyframes card-LrowLoop {
+  from {
+        transform: translateX(calc(-100% - var(--gap) ));
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+
+}
+
+@keyframes card-RrowLoop {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+     transform: translateX(calc(-100% - var(--gap) ));
+  }
+
+}
+
+
+@media (max-width: 1198px) {
+  .facilities-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes gridAnimation {
+  0% { background-color: transparent; }
+  50% { background-color: grey; }
+  100% { background-color: transparent; }
+}
+
+.grid-layer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 75px);
+  grid-template-rows: repeat(auto-fill, 70px);
+  background-image:
+    linear-gradient(to bottom, #1A1420 1.5px, transparent 1px),
+    linear-gradient(to right, #1A1420 1.5px, transparent 1px);
+  background-size: 80px 70px, 75px 70px;
+  background-repeat: repeat, repeat;
+  background-position: 0  0, 75px 70px ;
+}
+
+.box-animation {
+
+   border: 1.5px solid #1A1420 ;
+  
+}
+
+/* This class triggers the animation for the active group */
+.animate-active {
+ 
+  animation-name: focusedBg;
+  animation-duration: 2s;
+  animation-fill-mode:both;
+  animation-timing-function: step-start;
+
+}
+
+@keyframes focusedBg {
+  0% {
+    
+    background-color: transparent;
+  }
+  100% {
+    
+    background-color: #130E1C;
+  }
+}
+
+
+@media (min-width: 300px) {
+  .grid-layer {
+    grid-template-columns: repeat(auto-fill, 46px);
+  grid-template-rows: repeat(auto-fill, 45px);
+    background-size:
+      46px 45px;
+  background-position: 0  0, 46px 45px ;
+    
+  }
+}
+
+@media (min-width: 640px) {
+  .grid-layer {
+    grid-template-columns: repeat(auto-fill, 46px);
+  grid-template-rows: repeat(auto-fill, 45px);
+    background-size:
+      46px 45px;
+  background-position: 0  0, 46px 45px ;
+
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-layer {
+      grid-template-columns: repeat(auto-fill, 75px);
+  grid-template-rows: repeat(auto-fill, 70px);
+    background-size:
+      75px 70px;
+  background-position: 0  0, 75px 70px ;
+
+  }
+}
+
+
+
+
+.overlay-Hlayer {
+  
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #a36ea6 20%, #864aa6 50%, #6622a6 80%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #a36ea6 20%, #864aa6 50%, #6622a6 80%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #a36ea6 20%, #864aa6 50%, #6622a6 80%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #a36ea6 20%, #864aa6 50%, #6622a6 80%, rgba(0, 0, 0, 0) 100%);
+
+  background-size:
+    2px 140px,
+    2px 140px,
+    2px 140px,
+    2px 140px;
+
+  /* The base grid repeats; the overlay layers should show only once */
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+
+  background-position:
+    375px 13%,
+    600px 37.5%,
+    975px 50%,
+    1200px 25%;
+
+}
+
+@media (min-width: 300px) {
+  .overlay-Hlayer {
+    background-position:
+       46px 24%,
+      276px 62%,
+      460px 40%,
+      598px 24%;
+
+  background-size:
+      2px 140px,
+      2px 140px,
+      2px 140px,
+      2px 140px;
+  }
+  
+}
+
+@media (min-width: 640px) {
+  .overlay-Hlayer {
+    background-position:
+      138px 22%,
+      230px 62%,
+      460px 82%,
+      598px 42%;
+
+    background-size:
+      2px 140px,
+      2px 140px,
+      2px 140px,
+      2px 140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .overlay-Hlayer {
+    background-position:
+      150px 18%,
+      375px 53%,
+      750px 72%,
+      1075px 36%;
+
+     background-size:
+    2px 140px,
+    2px 140px,
+    2px 140px,
+    2px 140px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .overlay-Hlayer {
+    background-position:
+      225px 18%,
+      450px 53%,
+      825px 72%,
+      1050px 36%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .overlay-Hlayer {
+    background-position:
+      375px 18%,
+      600px 53%,
+      975px 72%,
+      1200px 36%;
+  }
+}
+.overlay-Flayer {
+  
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #a36ea6 20%, #864aa6 50%, #6622a6 80%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #a36ea6 20%, #864aa6 50%, #6622a6 80%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #a36ea6 20%, #864aa6 50%, #6622a6 80%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #a36ea6 20%, #864aa6 50%, #6622a6 80%, rgba(0, 0, 0, 0) 100%);
+
+  background-size:
+    2px 140px,
+    2px 140px,
+    2px 140px,
+    2px 140px;
+
+  /* The base grid repeats; the overlay layers should show only once */
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+
+  background-position:
+    375px 13%,
+    600px 37.5%,
+    975px 50%,
+    1200px 25%;
+
+}
+
+@media (min-width: 300px) {
+  .overlay-Flayer {
+    background-position:
+       46px 3%,
+      138px 62%,
+      276px 85%,
+      414px 42%;
+
+  background-size:
+      2px 140px,
+      2px 140px,
+      2px 140px,
+      2px 140px;
+  }
+  
+}
+
+@media (min-width: 640px) {
+  .overlay-Flayer {
+    background-position:
+      138px 3%,
+      230px 62%,
+      460px 95%,
+      598px 42%;
+
+    background-size:
+      2px 140px,
+      2px 140px,
+      2px 140px,
+      2px 140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .overlay-Flayer {
+    background-position:
+      150px 3%,
+      375px 67%,
+      750px 99%,
+      1075px 33%;
+
+     background-size:
+    2px 140px,
+    2px 140px,
+    2px 140px,
+    2px 140px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .overlay-Flayer {
+    background-position:
+      225px 3%,
+      450px 67%,
+      825px 99%,
+      1050px 33%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .overlay-Flayer {
+    background-position:
+      375px 3%,
+      600px 67%,
+      975px 99%,
+      1200px 33%;
+  }
 }
